@@ -9,12 +9,16 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/libregraph/idm/cmd/idmd/gen"
+
+	"stash.kopano.io/kgol/kidm"
 	"stash.kopano.io/kgol/kidm/cmd"
-	"stash.kopano.io/kgol/kidm/cmd/kidmd/gen"
 	"stash.kopano.io/kgol/kidm/cmd/kidmd/serve"
 )
 
 func main() {
+	kidm.SetDefaults()
+
 	cmd.RootCmd.Use = "kidmd"
 
 	cmd.RootCmd.AddCommand(serve.CommandServe())
