@@ -4,6 +4,13 @@
 
 
 
+## v0.3.0 (2021-06-13)
+
+- Use functional implementation from libregraph/idm
+- Add proper LICENSE file
+- Add readme file
+
+
 ## v0.2.7 (2021-05-31)
 
 - Skip loading nil LDIF entries
